@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import { mainRoutes } from './routes/main.router'
+import { mainRoutes } from './routes/main.routes'
 import { authRoutes } from './routes/auth.routes'
 import { adminRoutes } from './routes/admin.routes'
 

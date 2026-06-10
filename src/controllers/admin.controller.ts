@@ -12,7 +12,7 @@ export const deletePosts: RequestHandler = async (req, res) => {
     //Lógica para deletar um post
 }
 
-export const getAllPostsPosts: RequestHandler = async (req, res) => {
+export const getAllPosts: RequestHandler = async (req, res) => {
     //Lógica para obter todos os post
 }
 
