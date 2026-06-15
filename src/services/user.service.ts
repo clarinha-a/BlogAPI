@@ -1,4 +1,3 @@
-import { Verify } from "node:crypto";
 import { prisma } from "../libs/prisma";
 import bcrypt from "bcryptjs";
 
@@ -8,7 +7,7 @@ type CreateUserProps = {
     password: string
 }
 
-type verifyUserProps ={
+type VerifyUserProps ={
     email: string
     password: string
 }

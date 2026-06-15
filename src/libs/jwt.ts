@@ -1,4 +1,4 @@
-import { Jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
 export const createJWT = (payload: any) => {
     return jwt.sign(
