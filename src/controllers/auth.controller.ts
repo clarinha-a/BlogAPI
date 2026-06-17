@@ -54,6 +54,10 @@ export const signUp: RequestHandler = async (req, res) => {
 		token
 	})
 }
-export const validate: RequestHandler = (req, res) => {
-	// Lógica para validar o token de autenticação
+
+export const validate: RequestHandler = async (
+	req: ExtendedRequest,
+	res: Response
+) => {
+	res.json({ user: req.user })
 }
