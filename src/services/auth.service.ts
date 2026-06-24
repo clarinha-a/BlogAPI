@@ -2,6 +2,7 @@ import { User } from "@prisma/client";
 import { createJWT } from "../libs/jwt";
 import { TokenPayload } from "../types/token-payload";
 import { getUserById } from './user.service'
+import { Request } from "express";
 
 export const createToken = (user: User) => {
     return createJWT({ id: user.id })
@@ -22,4 +23,5 @@ export const verifyRequest = async (req: Request) => {
             }
         }
     }
+    return false
 }
